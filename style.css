@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(assets/sky.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+.asteroid{
+    background-image: url(assets/asteroid.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+}
+.leftAsteroid{
+    background-image: url(assets/asteroid.png);
+    background-repeat: no-repeat;
+    background-size: 200% 100%;
+    background-position-x: 0px;
+    position: absolute;
+}
+.rightAsteroid{
+    background-image: url(assets/asteroid.png);
+    background-repeat: no-repeat;
+    background-size: 200% 100%;
+    background-position-x: 100%;
+    position: absolute;
+}
+.ufo{
+    width: 24px;
+    height: 24px;
+    background-image: url(assets/ufo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    top: -24px;
+}
+.starship{
+    width: 16px;
+    height: 16px;
+    background-image: url(assets/spaceship.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: calc(50vh - 50px);
+    left: calc(50vw - 25px);
+    transition-property: top, left;
+    transition-duration: .001s;
+}
+.projectile{
+    width: 2px;
+    height: 2px;
+    border: 1px solid black;
+    position: absolute;
+}
+.exitBlock{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: -100%;
+}
+.textWrapper{
+    width: 300px;
+    height: 200px;
+    padding: 30px 50px;
+    margin-top: 20%;
+    margin-left: calc(50% - 150px);
+    box-shadow: 1px 1px 2px grey;
+    background-color: rgba(255, 255, 255, 1);
+}
+h2, h3{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+}
+.flex{
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    box-shadow: 1px 1px 2px grey;
+    text-align: center;
+    width: 50px;
+    height: 25px;
+    font-weight: 600;
+}
